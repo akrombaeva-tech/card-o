@@ -8,6 +8,14 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body html {
   height: 100%;
 }
@@ -64,6 +72,16 @@ header {
   padding-right: 100px;
   width: 200px;
 }
+.hero__img{
+  border-radius: 20px;
+  margin-left: 250px;
+
+}
+.hero__description{
+  font-size: 29px;
+  color: white;
+  margin-bottom: 20px;
+}
 .hero__name {
   font-size: 50px;
   margin-bottom: 20px;
@@ -82,7 +100,6 @@ header {
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
-
 }
 .hero__img {
   border-radius: 7px;
@@ -134,7 +151,6 @@ span {
   margin-top: 170px;
 }
 
-/* 4 ta karta uchun gridni moslash */
 .family-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -162,7 +178,6 @@ span {
   transform: rotateY(180deg);
 }
 
-/* 2. FOCUS EFFEKTI: Qolganlarni xiralashtirish va qoraytirish */
 .family-grid:hover .family-card:not(:hover) {
   filter: blur(8px) brightness(0.4);
   transform: scale(0.95);
@@ -180,7 +195,6 @@ span {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Old tomoni */
 .card-front img {
   width: 100%;
   height: 100%;
@@ -229,7 +243,7 @@ span {
   margin-block: 0 50px;
   font-size: 42px;
   font-weight: 600;
-  color: rgba(0, 0, 255, 0.729);
+  color: rgba(16, 16, 120, 0.729);
   line-height: 1.2;
   text-align: center;
   margin-top: 100px;
@@ -275,7 +289,7 @@ span {
   position: relative;
   height: 100%;
   padding: 30px 35px;
-  background-color: #071c38;
+  background-color: #0b033c;
   border-radius: 10px;
 }
 
@@ -289,7 +303,7 @@ span {
   height: 220px;
   margin-top: 23px;
   border-radius: 5px;
-  box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+  box-shadow: 15px 15px 40px rgba(177, 171, 171, 0.5);
   object-fit: cover;
   transition: transform 0.3s linear;
 }
@@ -298,7 +312,6 @@ span {
   transform: scale(1.05);
 }
 
-/* LEFT FAR */
 #s1:checked ~ .cards #slide4,
 #s2:checked ~ .cards #slide5,
 #s3:checked ~ .cards #slide6,
@@ -308,7 +321,6 @@ span {
   transform: translate3d(-70%, 0, -220px);
 }
 
-/* LEFT NEAR */
 #s1:checked ~ .cards #slide5,
 #s2:checked ~ .cards #slide6,
 #s3:checked ~ .cards #slide1,
@@ -318,7 +330,6 @@ span {
   transform: translate3d(-35%, 0, -120px);
 }
 
-/* CENTER */
 #s1:checked ~ .cards #slide6,
 #s2:checked ~ .cards #slide1,
 #s3:checked ~ .cards #slide2,
@@ -329,7 +340,6 @@ span {
   z-index: 2;
 }
 
-/* RIGHT NEAR */
 #s1:checked ~ .cards #slide1,
 #s2:checked ~ .cards #slide2,
 #s3:checked ~ .cards #slide3,
@@ -339,7 +349,7 @@ span {
   transform: translate3d(35%, 0, -120px);
 }
 
-/* RIGHT FAR */
+
 #s1:checked ~ .cards #slide2,
 #s2:checked ~ .cards #slide3,
 #s3:checked ~ .cards #slide4,
@@ -416,7 +426,7 @@ span {
 }
 
 .maain__name {
-  color: rgba(0, 0, 255, 0.871);
+  color: rgba(9, 9, 87, 0.871);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -631,7 +641,7 @@ ul {
 }
 
 /* From Uiverse.io by javierBarroso */
-/* From Uiverse.io by javierBarroso */ 
+/* From Uiverse.io by javierBarroso */
 
 @keyframes rotation_9018 {
   0% {
@@ -652,11 +662,11 @@ ul {
   }
 }
 .site-footer {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .gallery {
   display: flex;
@@ -740,8 +750,9 @@ ul {
   transform: scale(1.1);
 }
 
-.gghh{
-    text-align: center;
+.gghh {
+  text-align: center;
+  color: rgba(0, 0, 255, 0.851);
 }
 .gallery {
   text-align: center;
@@ -754,7 +765,7 @@ ul {
 
 .images {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
