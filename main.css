@@ -46,7 +46,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 .btn {
   padding: 15px 45px;
   border-radius: 10px;
@@ -74,8 +73,7 @@ header {
 }
 .hero__img{
   border-radius: 20px;
-  margin-left: 250px;
-
+  width: 200pt;
 }
 .hero__description{
   font-size: 29px;
@@ -291,6 +289,7 @@ span {
   padding: 30px 35px;
   background-color: #0b033c;
   border-radius: 10px;
+  color: white;
 }
 
 #group .image-box {
