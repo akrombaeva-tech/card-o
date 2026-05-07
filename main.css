@@ -35,11 +35,20 @@ header {
   z-index: -1;
 }
 
+.nav__rotate{
+  display: flex;
+  gap: 30px;
+}
+
 .nav__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.nav__name{
+  color: white;
 }
 
 .nav__wrap {
@@ -52,20 +61,22 @@ header {
   border: none;
   background-color: rgba(0, 0, 255, 0.651);
   color: #fff;
-  margin-right: 100px;
+
   transition: 0.6s ease-in-out;
 }
 .btn:hover {
-  background: linear-gradient(to right, rgb(28, 28, 83), rgb(0, 0, 0));
+  background: linear-gradient(to right,blue,gray);
 }
 
 .nav {
   position: fixed;
   z-index: 1;
   justify-content: center;
-  background-color: white;
   top: -10px;
   padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 }
 .nav__icon {
   padding-right: 100px;
@@ -73,7 +84,7 @@ header {
 }
 .hero__img{
   border-radius: 20px;
-  width: 200pt;
+  width: 200px;
 }
 .hero__description{
   font-size: 29px;
@@ -98,6 +109,7 @@ header {
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 150px;
 }
 .hero__img {
   border-radius: 7px;
@@ -302,7 +314,7 @@ span {
   height: 220px;
   margin-top: 23px;
   border-radius: 5px;
-  box-shadow: 15px 15px 40px rgba(177, 171, 171, 0.5);
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   transition: transform 0.3s linear;
 }
@@ -542,7 +554,8 @@ main {
   transform: scale(1.1);
 }
 
-/* From Uiverse.io by wilsondesouza */
+
+/* From Uiverse.io by wilsondesouza */ 
 ul {
   list-style: none;
 }
@@ -613,14 +626,14 @@ ul {
   height: 100%;
 }
 
-.example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
-  background-color: #0274b3;
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #128c7e;
 }
 
-.example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
-  background-color: #24262a;
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #3b5998;
 }
 .example-2 .icon-content a[data-social="instagram"] .filled,
 .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
@@ -639,27 +652,8 @@ ul {
   background-color: #ff0000;
 }
 
-/* From Uiverse.io by javierBarroso */
-/* From Uiverse.io by javierBarroso */
 
-@keyframes rotation_9018 {
-  0% {
-    transform: rotate(0deg) translateY(50%);
-  }
 
-  100% {
-    transform: rotate(360deg) translateY(50%);
-  }
-}
-@keyframes rotation_9019 {
-  0% {
-    transform: rotate(0deg) translateY(-50%);
-  }
-
-  100% {
-    transform: rotate(360deg) translateY(-50%);
-  }
-}
 .site-footer {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -790,4 +784,26 @@ ul {
   opacity: 1;
   transform: scale(1.1);
   z-index: 10;
+}
+
+
+/* From Uiverse.io by anniekoop */ 
+.input {
+  max-width: 190px;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid white;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+}
+
+.input:focus {
+  box-shadow: 5.5px 7px 0 gray;
+}
+.footer__inp{
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
 }
