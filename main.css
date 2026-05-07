@@ -125,8 +125,9 @@ span {
 }
 .div__name {
   font-size: 40px;
-  color: rgba(0, 0, 255, 0.716);
+  color: white;
   text-align: center;
+  margin-bottom: 30px;
 }
 .div {
   margin-top: 200px;
